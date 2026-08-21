@@ -5,7 +5,7 @@ from databricks import sql as dbsql
 import re
 
 st.set_page_config(page_title="CrickGPT 🏏", page_icon="🏏")
-st.title("🏏 CrickGPT — Ask Anything About IPL")
+st.title(" CrickGPT — Ask Anything About IPL")
 
 w = WorkspaceClient()
 
@@ -73,20 +73,14 @@ sound natural and enthusiastic, 1-3 sentences. Don't mention SQL, queries, table
         max_tokens=150
     )
     return explain_response.choices[0].message.content.strip(), result_data
-
-# Sidebar with reset button
 with st.sidebar:
     st.header("🏏 CrickGPT")
     st.write("Ask me anything about IPL stats!")
     if st.button("🔄 Clear Chat"):
         st.session_state.messages = []
         st.rerun()
-
-# Chat interface
 if "messages" not in st.session_state:
     st.session_state.messages = []
-
-# Suggested questions (show only when chat is empty)
 clicked_question = None
 if len(st.session_state.messages) == 0:
     st.write("**Try asking:**")
