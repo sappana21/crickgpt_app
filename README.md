@@ -74,10 +74,6 @@ User Question → Llama 4 Maverick (Text-to-SQL) → SQL Warehouse → Gold Tabl
 - Add data visualizations (charts) alongside answers
 - Expand dataset with ball-by-ball commentary for richer RAG-based answers
 
-##  Keywords
-
-`databricks` `genai` `llm` `text-to-sql` `chatbot` `cricket-analytics` `ipl` `delta-lake` `pyspark` `streamlit` `data-engineering` `medallion-architecture` `llama` `unity-catalog` `databricks-apps` `data-analytics` `nlp` `sql` `machine-learning` `lakehouse`
-
 ##  License
 
 This project uses publicly available IPL data for educational and portfolio purposes.
